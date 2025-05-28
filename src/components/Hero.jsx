@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <main className="relative flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-6rem)]">
       <Motion.div
-        className="max-w-xl lg:ml-[10%] z-10 mt-[99%] md:mt-[80%] lg:mt-0"
+        className="max-w-xl lg:ml-[10%] z-10 mt-[90%] md:mt-[80%] lg:mt-0"
         variants={heroVariants}
         initial="hidden"
         animate="visible"
@@ -38,11 +38,11 @@ const Hero = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-8 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-6">
           Email for <span className="text-[#e99b63]">Developers</span>
         </h1>
 
-        <p className="text-base sm:text-lg max-w-[25rem] lg:max-w-[30rem]">
+        <p className=" text-base sm:text-lg max-w-[20rem] lg:max-w-[30rem] ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatum?
         </p>
