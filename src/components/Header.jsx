@@ -24,8 +24,24 @@ const Header = () => {
   };
 
   const mobileMenuVariants = {
-    open: { opacity: 1, height: "100vh" },
-    closed: { opacity: 0, height: 0 },
+    open: {
+      opacity: 1,
+      height: "100vh",
+      transition: {
+        type: "tween", // Smooth animation type
+        duration: 0.8, // Total animation duration (800ms)
+        delay: 0.2, // Delay before animation starts (200ms)
+        ease: [0.25, 0.1, 0.25, 1], // Custom easing curve
+      },
+    },
+    closed: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.5, // Faster close animation
+        ease: [0.55, 0.06, 0.68, 0.19],
+      },
+    },
   };
 
   return (
@@ -59,7 +75,6 @@ const Header = () => {
       </nav>
 
       <Motion.button
-        whileHover={{ scale: 1.05 }}
         className="hidden md:block bg-[#e99b63]/60 hover:bg-[#e99b63] text-black py-2 px-8 rounded-2xl border-none font-medium transition-all duration-500 cursor-pointer z-50"
       >
         Sign In
@@ -67,7 +82,6 @@ const Header = () => {
 
       {/* Mobile Menu Button */}
       <Motion.button
-        whileTap={{ scale: 0.95 }}
         className="md:hidden p-2 z-50"
         onClick={toggleMobileMenu}
       >
@@ -98,7 +112,6 @@ const Header = () => {
                 <Motion.a
                   key={link}
                   href="#"
-                  whileHover={{ scale: 1.1 }}
                   className="text-base tracking-wider transition-colors hover:text-[#e99b63] duration-500 z-50"
                 >
                   {link}
