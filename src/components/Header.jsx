@@ -74,7 +74,17 @@ const Header = () => {
         ))}
       </nav>
 
-      <Motion.button className="hidden md:block bg-[#e99b63]/60 hover:bg-[#e99b63] text-black py-2 px-8 rounded-2xl border-none font-medium transition-all duration-500 cursor-pointer z-50">
+      <Motion.button
+        className="hidden md:block py-2 px-8  border-none font-medium transition-all duration-500 cursor-pointer z-50
+        relative w-[140px] h-[40px] rounded-lg text-sm text-white
+              bg-gradient-to-b from-[#df8240] to-[#1a1a1a]/30
+              shadow-[0px_0px_12px_#df8240]"
+      >
+        <div className="absolute inset-0">
+          <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+          <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+          <div className="rounded-lg absolute inset-0 shadow-[0_0_10px_rgb(255,255,255,0.4)_inset]"></div>
+        </div>
         Sign In
       </Motion.button>
 
@@ -112,6 +122,20 @@ const Header = () => {
                   {link}
                 </Motion.a>
               ))}
+
+              <Motion.button
+                className="mt-8 py-2 px-8 border-none font-medium transition-all duration-500 cursor-pointer z-50
+                relative w-[280px] h-[40px] rounded-lg text-sm text-white
+                bg-gradient-to-b from-[#df8240] to-[#1a1a1a]/30
+                shadow-[0px_0px_12px_#df8240]"
+              >
+                <div className="absolute inset-0">
+                  <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+                  <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+                  <div className="rounded-lg absolute inset-0 shadow-[0_0_10px_rgb(255,255,255,0.4)_inset]"></div>
+                </div>
+                Sign In
+              </Motion.button>
             </Motion.nav>
           </Motion.div>
         )}

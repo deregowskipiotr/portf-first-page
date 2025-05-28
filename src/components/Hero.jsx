@@ -1,5 +1,6 @@
 import DiamondIcon from "@mui/icons-material/Diamond";
-import LaunchIcon from "@mui/icons-material/Launch";
+import FolderIcon from "@mui/icons-material/Folder";
+import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import { motion as Motion } from "framer-motion";
 
 const Hero = () => {
@@ -31,32 +32,56 @@ const Hero = () => {
         animate="visible"
       >
         {/* Hero Text - with gradient border */}
-        <div className="relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-xl">
+        <div className="relative w-full sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-xl">
           <div className="absolute inset-[1px] bg-black rounded-xl flex items-center justify-center gap-1">
             <DiamondIcon /> INTRODUCING
           </div>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-6 text-center sm:text-start">
           Email for <span className="text-[#e99b63]">Developers</span>
         </h1>
 
-        <p className=" text-base sm:text-lg max-w-[20rem] lg:max-w-[30rem] ">
+        <p className=" text-base sm:text-lg max-w-[20rem] lg:max-w-[30rem] text-center sm:text-start">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptatum?
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-2 mt-4 sm:mt-6">
-          <button className=" text-white/40 hover:text-white py-2 sm:py-3 px-8 sm:px-10 rounded-2xl sm:text-lg text-sm font-semibold  transition-all duration-500 bg-[#e99b63]/60 hover:bg-[#e99b63] ">
+        <div className="flex gap-4 mt-4 sm:mt-6">
+          <button
+            className="py-2 sm:py-1 px-4 sm:px-10 sm:text-lg
+            relative w-[150px] md:w-[240px] h-[40px] md:h-[50px] rounded-lg font-medium text-sm text-white/60
+              bg-gradient-to-b from-[#df8240] to-[#1a1a1a]/30
+              shadow-[0px_0px_12px_#df8240]"
+          >
+            <div className="absolute inset-0">
+              <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+              <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+              <div className="rounded-lg absolute inset-0 shadow-[0_0_10px_rgb(255,255,255,0.4)_inset]"></div>
+            </div>
             Documentation
-            <LaunchIcon className="ml-2" fontSize="small" />
+            <span className="ml-2 hidden sm:inline" fontSize="small">
+              <FolderIcon />
+            </span>
           </button>
 
-          <button className=" text-white/40 hover:text-white py-2 sm:py-3 px-8 sm:px-10 rounded-2xl sm:text-lg text-sm font-semibold  transition-all duration-500 bg-[#1a1a1a] hover:bg-[#505050]">
+          <button
+            className="py-2 sm:py-1 px-4 sm:px-10 sm:text-lg transition-all duration-500
+            relative w-[150px] md:w-[240px] h-[40px] md:h-[50px] rounded-lg font-medium text-sm text-white/60
+              bg-gradient-to-b from-[#656565] to-[#1a1a1a]/30
+              shadow-[0px_0px_12px_#656565]"
+          >
+            <div className="absolute inset-0">
+              <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+              <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+              <div className="rounded-lg absolute inset-0 shadow-[0_0_10px_rgb(255,255,255,0.4)_inset]"></div>
+            </div>
             Get Started
-            <LaunchIcon className="ml-2" fontSize="small" />
+            <span className="ml-2 hidden sm:inline" fontSize="small">
+              <PlayCircleOutlineIcon />
+            </span>
           </button>
         </div>
       </Motion.div>
