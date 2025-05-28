@@ -29,12 +29,12 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex gap-2 mt-4 sm:mt-6">
-          <button className=" text-white/40 hover:text-white py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-500 bg-[#e99b63]/60 hover:bg-[#e99b63] ">
+          <button className=" text-white/40 hover:text-white py-2 sm:py-3 px-8 sm:px-10 rounded-2xl sm:text-lg text-sm font-semibold  transition-all duration-500 bg-[#e99b63]/60 hover:bg-[#e99b63] ">
             Documentation
             <LaunchIcon className="ml-2" fontSize="small" />
           </button>
 
-          <button className=" text-white/40 hover:text-white py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-500 bg-[#1a1a1a] hover:bg-[#505050]">
+          <button className=" text-white/40 hover:text-white py-2 sm:py-3 px-8 sm:px-10 rounded-2xl sm:text-lg text-sm font-semibold  transition-all duration-500 bg-[#1a1a1a] hover:bg-[#505050]">
             Get Started
             <LaunchIcon className="ml-2" fontSize="small" />
           </button>

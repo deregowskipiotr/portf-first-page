@@ -74,17 +74,12 @@ const Header = () => {
         ))}
       </nav>
 
-      <Motion.button
-        className="hidden md:block bg-[#e99b63]/60 hover:bg-[#e99b63] text-black py-2 px-8 rounded-2xl border-none font-medium transition-all duration-500 cursor-pointer z-50"
-      >
+      <Motion.button className="hidden md:block bg-[#e99b63]/60 hover:bg-[#e99b63] text-black py-2 px-8 rounded-2xl border-none font-medium transition-all duration-500 cursor-pointer z-50">
         Sign In
       </Motion.button>
 
       {/* Mobile Menu Button */}
-      <Motion.button
-        className="md:hidden p-2 z-50"
-        onClick={toggleMobileMenu}
-      >
+      <Motion.button className="md:hidden p-2 z-50" onClick={toggleMobileMenu}>
         <ClearAllIcon
           fontSize="large"
           className={`transition-transform ${
