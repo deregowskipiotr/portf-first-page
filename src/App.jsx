@@ -23,10 +23,15 @@ const App = () => {
   return (
     <main>
       {/* Gradient Image */}
-      <img className='absolute top-0 right-0 opacity-60 -z-10' src='/images/gradient.png' alt='background- gradient'/>
+      <img
+        className="absolute top-0 right-0 opacity-60 -z-10"
+        src="/images/gradient.png"
+        alt="background- gradient"
+      />
 
       {/* Blur Effect */}
-      <div className='absolute h-0 w-[20rem] top-[20%] right-[-5%] shadow-[0_0_900px_40px_#e99b63] -rotate-[30deg] -z-10'/>
+      <div className="absolute h-0 w-[20rem] top-[20%] right-[-5%] shadow-[0_0_900px_30px_#e99b63] -rotate-[30deg] -z-10" />
+
 
       <Header />
       <Hero />
@@ -35,7 +40,7 @@ const App = () => {
       <Testimonials />
       <Footer />
     </main>
-  )
+  );
 }
 
 export default App

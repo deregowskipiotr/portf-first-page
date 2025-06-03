@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="flex gap-4 mt-4 sm:mt-6">
           <button
             className="py-2 sm:py-1 px-4 sm:px-10 sm:text-lg
-            relative w-[150px] md:w-[240px] h-[40px] md:h-[50px] rounded-lg font-medium text-sm text-white/60
+              relative w-[150px] md:w-[240px] h-[40px] md:h-[50px] rounded-lg font-medium text-sm text-white/60
               bg-gradient-to-b from-[#df8240] to-[#1a1a1a]/30
               shadow-[0px_0px_12px_#df8240]"
           >
