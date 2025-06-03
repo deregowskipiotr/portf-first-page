@@ -39,13 +39,21 @@ const Hero = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-6 text-center sm:text-start">
-          Email for <span className="text-[#e99b63]">Developers</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-cormorant font-semibold my-6 text-center sm:text-start">
+          The Opulent <span className="text-[#e99b63]">Cellar</span>
         </h1>
 
-        <p className=" text-base sm:text-lg max-w-[20rem] lg:max-w-[30rem] text-center sm:text-start">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatum?
+        {/* Short text for mobile */}
+        <p className="block sm:hidden text-base max-w-[20rem] text-center">
+          Where the world’s finest spirits awaken your senses and tell tales of
+          timeless elegance.
+        </p>
+
+        {/* Full text for tablet and desktop */}
+        <p className="hidden sm:block text-base sm:text-lg max-w-[20rem] lg:max-w-[30rem] text-center sm:text-start">
+          Where the world’s finest spirits awaken your senses and tell tales of
+          timeless elegance. Discover, savor, and embrace the art of
+          extraordinary taste.
         </p>
 
         {/* Buttons */}
@@ -97,7 +105,7 @@ const Hero = () => {
         data-aos-duration="2000"
       >
         <img
-          src="/maccalan_-removebg-preview.png"
+          src="/images/maccalan_-removebg-preview.png"
           alt="glasses-img"
           className="w-[60%] sm:w-[90%] lg:w-[450px] "
         />

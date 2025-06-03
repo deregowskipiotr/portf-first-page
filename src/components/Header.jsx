@@ -4,7 +4,7 @@ import { motion as Motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navLinks = ["HOME", "ABOUT", "SERVICES", "CONTACT"];
+  const navLinks = ["HOME", "ABOUT", "TRAVEL", "CONTACT"];
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
