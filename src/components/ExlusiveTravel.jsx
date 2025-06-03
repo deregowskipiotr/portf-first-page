@@ -27,11 +27,11 @@ const ExlusiveTravel = () => {
                   shadow-[0px_0px_12px_#656565]"
                 >
                   <GlowCard card={card} index={index}>
-                    <div className="md:w-[70%] w-[50%] pl-10">
+                    <div className="w-full md:w-[70%] px-0 md:px-10">
                       <img
                         src={card.imgPath}
                         alt={card.title}
-                        className="w-full object-cover ml-[100px] md:ml-10" //photo product full width
+                        className="w-full object-cover h-[250px] mx-auto md:ml-10" //photo product full width
                       />
                     </div>
                   </GlowCard>
