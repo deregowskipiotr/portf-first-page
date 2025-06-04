@@ -5,7 +5,7 @@ const ExlusiveTravel = () => {
   return (
     <div
       id="travel"
-      className=" h-full w-[90%] mx-auto mb-6"
+      className=" h-full w-[90%] mx-auto md:mb-20 mb-8"
     >
       
         <div>
@@ -40,7 +40,7 @@ const ExlusiveTravel = () => {
                 <div className="md:w-4/6">
                   <div className="flex items-start">
                     <div className="absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center">
-                      <div className="absolute z-30 h-[110%] -top-10 w-14 md:w-28" />{" "}
+                      <div className="absolute z-30 h-[105%] -top-10 w-14 md:w-28 " />
                       {/* bg-black */}
                       <div className="bg-gradient-to-r from-[#656565] to-[#e99b63] w-[1px] h-full" />
                     </div>
@@ -50,10 +50,10 @@ const ExlusiveTravel = () => {
                         <img src={card.logoPath} alt="logo" />
                       </div>
 
-                      <div className="flex text-center py-2 px-5">
+                      <div className="flex text-start py-2 px-5">
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
 
-                        <ul className=" ms-5 my-4  flex flex-col gap-4 text-white-50">
+                        <ul className=" ms-5 my-4  flex flex-col gap-4 text-white/50">
                           {card.responsibilities.map((responsibility) => (
                             <li key={responsibility} className="text-lg">
                               {responsibility}

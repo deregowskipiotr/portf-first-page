@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <div id="about" className="flex w-full h-full my-10 items-center">
-      <div className="md:w-[75%] mx-auto">
+      <div className="md:w-[80%] w-full mx-auto">
         <h2
           ref={combinedRef}
           className="my-6 mx-6 text-3xl md:text-7xl text-center font-cormorant font-bold text-white/40"
